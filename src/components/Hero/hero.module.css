@@ -1,0 +1,95 @@
+.hero {
+  position: relative;
+  height: fit-content;
+}
+.heroTextContainer {
+  position: absolute;
+  top: 15rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+}
+.logo {
+  margin: 0 auto 2.25rem;
+}
+.heroImage {
+  filter: contrast(90%);
+}
+.heading {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+.para {
+  font-size: 1rem;
+  line-height: 1.625;
+  margin-bottom: 3.375rem;
+}
+@media (min-width: 500px) {
+  .heroTextContainer {
+    top: 374px;
+    padding: 1.5rem 2.5rem;
+  }
+  .logo {
+    margin-bottom: 2.375rem;
+  }
+  .heading {
+    font-size: 3rem;
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+  }
+  .para {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    width: calc(100% - 6rem);
+    margin: 0 auto 3.375rem;
+  }
+}
+@media (min-width: 900px) {
+  .heroTextContainer {
+    top: 0;
+    left: 0;
+    width: 36%;
+    height: 100%;
+    overflow: visible;
+    padding: 3rem 0 0 6rem;
+    text-align: start;
+  }
+  .heading {
+    text-wrap: nowrap;
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 0.625rem;
+  }
+  .logo {
+    margin: 0;
+    margin-bottom: 4.625rem;
+  }
+  .para {
+    margin-left: 0;
+    margin-right: 0;
+    width: 125%;
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1025px) {
+  .heroTextContainer {
+    padding: 4rem 0 0 10.25rem;
+  }
+  .heading {
+    font-size: 5rem;
+    line-height: 1;
+  }
+  .logo {
+    margin-bottom: 9.625rem;
+  }
+  .para {
+    margin-bottom: 2.5rem;
+
+    font-size: 1.25rem;
+  }
+}
