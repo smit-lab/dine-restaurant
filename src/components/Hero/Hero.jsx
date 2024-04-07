@@ -9,27 +9,27 @@ function Hero() {
   return (
     <div className={style.hero}>
       <picture>
-        <source media="(min-width: 900px)" srcSet={heroImageDesktop} />
-        <source media="(min-width: 500px)" srcSet={heroImageTablet} />
+        <source media="(min-width: 1025px)" srcSet={`${heroImageDesktop} 2x`} />
+        <source media="(min-width: 500px)" srcSet={`${heroImageTablet} 2x`} />
 
         <img
           src={heroImage}
-          srcSet={heroImage}
+          srcSet={`${heroImage} 2x`}
           alt=""
           className={style.heroImage}
         />
       </picture>
       <div className={style.heroTextContainer}>
         <img src={logo} alt="" className={style.logo} />
-        <h1 className={`${style.heading} leagueSpartan light`}>
+        <h1 className={`${style.heading} light`}>
           Exquisite dining
           <br /> since 1989
         </h1>
-        <p className={`${style.para} leagueSpartan regular`}>
+        <p className={`${style.para} regular`}>
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </p>
-        <Button text={"book a table"} />
+        <Button text={"book a table"} btnType={"primary"} />
       </div>
     </div>
   );

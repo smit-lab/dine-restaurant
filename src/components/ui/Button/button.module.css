@@ -1,7 +1,27 @@
 .btn {
-  color: white;
-  text-transform: uppercase;
-  border: 1px solid white;
   padding: 1.5rem 3.375rem;
   letter-spacing: 2.5px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+.primary {
+  color: white;
+  transition: all ease-in-out 200ms;
+}
+.secondary {
+  color: white;
+  border-color: black;
+  background: #000;
+  transition: all ease-in-out 200ms;
+}
+.inactive {
+  opacity: 0.25;
+}
+.primary:hover {
+  background: white;
+  color: black;
+}
+.secondary:hover {
+  background: white;
+  color: black;
 }
